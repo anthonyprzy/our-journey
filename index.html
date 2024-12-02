@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f3e6;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 20px;
+        }
+        #home {
+            display: block; /* Show Home section by default */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abby and Anthony</h1>
+        <p>Our Journey</p>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('dates')">Dates</a>
+        <a href="javascript:void(0)" onclick="showSection('concerts')">Concerts</a>
+        <a href="javascript:void(0)" onclick="showSection('photos')">Photos</a>
+    </nav>
+    <section id="home">
+        <h2>MERRY CHRISTMAS</h2>
+        <p>Dear Abby,<br><br>
+
+            My penmanship isn't great like yours, so I hope this will do. <br>
+            I can do my best to fit my love for you into sentences, but I can't really make up words to express how I feel for you.<br>
+            I could never ask someone to do more for me than you've already done, <br>
+            and it hasn't been one second that I have not felt your love and constant support for me in everything I do.<br>
+            For that, I'll always be grateful. <br>
+            You've been the biggest light in my life since I met you and my only regret is not finding you sooner. <br>
+            Hopefully these small things will show you a little bit of how much I really love you. <br><br>
+            
+            Always yours. Love, <br>
+            Ant</p>
+    </section>
+    <section id="dates">
+        <h2>Dates</h2>
+        <ul>
+            <li><strong>Our first date:</strong> Cards in Walmart</li>
+            <img src="images/IMG_6620.jpeg" width ="300" height="400">
+            <li><strong>Cafe June</strong></li>
+            <img src="images/IMG_6646.jpeg" width ="300" height="400">
+            <img src="images/IMG_6907.jpeg" width ="300" height="400">
+            <li><strong>Worthington</strong></li>
+            <img src="images/IMG_7038.jpeg" width ="300" height="400">
+            <img src="images/IMG_7058.jpeg" width ="300" height="500">
+            <img src="images/IMG_7432.jpeg" width ="300" height="400">
+            <li><strong>The Fair</strong></li>
+            <img src="images/IMG_7504.jpeg" width ="300" height="400">
+            <img src="images/7E6F7B97-AE36-40AA-9D74-0F2EBFE0390B.jpg" width ="400" height="300">
+            <li><strong>TeaDo</strong></li>
+            <img src="images/IMG_7508.jpeg" width ="300" height="400">
+            <li><strong>The Mall</strong></li>
+            <img src="images/IMG_8451.jpeg" width ="300" height="500">
+            <img src="images/IMG_8443.jpeg" width ="300" height="500">
+            <img src="images/IMG_8437.jpeg" width ="300" height="500">
+            <li><strong>Blackwall</strong></li>
+            <img src="images/IMG_7938.jpeg" width ="300" height="500">
+            <li><strong>Umi and OEC</strong></li>
+            <img src="images/IMG_6693.jpeg" width ="300" height="400">
+            <img src="images/IMG_8104.jpeg" width ="300" height="400">
+
+
+            <li><strong>Parties</strong></li>
+            <img src="images/IMG_7913.jpeg" width ="400" height="300">
+            <img src="images/B1BACA3A-1F00-4DF7-8103-7547992D1764.jpeg" width ="400" height="300">
+            <img src="images/102_0632.jpeg" width ="400" height="300">
+            <img src="images/IMG_8979.jpeg" width ="300" height="400">
+            <img src="images/IMG_9090.jpeg" width ="400" height="300">
+
+
+        </ul>
+    </section>
+    <section id="concerts">
+        <h2>Concerts</h2>
+        <ul>
+            <li><strong>Luke Combs - July 2024:</strong></li>
+            <img src="images/IMG_7382.jpeg" width ="400" height="300">
+
+            <li><strong>Dierks Bentley - August 2024:</strong></li>
+            <img src="images/DBC6D89D-96C9-4F5C-BF6C-21862BAA5C64.jpg" width ="400" height="300">
+            <img src="images/IMG_7535.jpeg" width ="400" height="300">
+
+            <li><strong>Mitski - August 2024:</strong></li>
+            <img src="images/6F08AFD3-2562-41E2-94F7-4AEB00B1002B.jpeg" width ="400" height="300">
+            <img src="images/102_0273.jpeg" width ="400" height="300">
+
+        </ul>
+    </section>
+    <section id="photos">
+        <h2>Photos</h2>
+        <p>Coming soon: A gallery of all our favorite moments together!</p>
+    </section>
+
+    <script>
+        // Function to show the selected section
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            var sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
